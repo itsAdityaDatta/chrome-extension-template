@@ -1,0 +1,27 @@
+html{
+    width: 120px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+a, button{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #1b1b1b;
+    color: white;
+    font-family: 'Abel';
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+a:last-of-type, button:last-of-type{
+    margin-bottom: 0px;
+}
+a, button:hover{
+    cursor: pointer;
+}
+#onOff{
+  background-color: rgb(200, 0, 0);
+}

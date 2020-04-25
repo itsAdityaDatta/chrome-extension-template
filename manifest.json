@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Secreasy",
+    "version": "0.1",
+    "description": "Secreasy closes all your incongnito tabs at the flick of your hand, stores the links privately and restores the tabs on your command",
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab", 
+        "declarativeContent"
+    ],  
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+    ],
+    "browser_action":{
+        "default_title": "Secreasy",
+        "default_icon": {
+            "16": "images/16.png",
+            "32": "images/32.png",
+            "48": "images/48.png",
+            "128": "images/128.png"
+        },
+        "icons": {
+            "16": "images/16.png",
+            "32": "images/32.png",
+            "48": "images/48.png",
+            "128": "images/128.png"
+        }
+    }
+}
+
+  
